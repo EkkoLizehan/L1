@@ -523,7 +523,11 @@ public class MainActivity extends AppCompatActivity {
 
                     res = (float)(val1 / val2);
 
-                    if(((int)res) == (res)) {
+                    if (val2 == 0){
+
+                        display.setText("Cannot divide by 0");
+
+                    }   else if(((int)res) == (res)) {
 
                         display.setText(Integer.toString((int)res));
                         //val1 = 0;
